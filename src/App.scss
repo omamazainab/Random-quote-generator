@@ -1,0 +1,120 @@
+@import './styles/breakpoints.scss';
+
+html,body,#root{
+    height: 100%;
+}
+
+#root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+#quote-box{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba($color: white , $alpha: 0.8);
+    border-radius: 5px;
+}
+
+#controls{
+    display: flex;
+    justify-content: space-between;
+}
+
+#tweet-quote{
+    color: rgba($color: #2d83f5, $alpha: 1.0);
+}
+
+#new-quote{
+    background: transparent;
+    border: none;
+}
+
+@include mobile{
+    #quote-box{
+        width: 80%; 
+    }
+
+    #text{
+        font-size: 20px;
+    }
+
+    #author{
+        margin-top: 10px;
+        text-align: right;
+        font-size: 12px;
+    }
+
+    #tweet-quote{
+        font-size: 25px;
+    }
+
+    #new-quote{
+        font-size: 25px;
+    }
+
+    #controls{
+        margin-top: 10px;
+    }
+}
+
+
+@include tablet{
+    #quote-box{
+        width: 70%; 
+    }
+
+    #text{
+        font-size: 30px;
+    }
+
+    #author{
+        margin-top: 15px;
+        text-align: right;
+        font-size: 20px;
+    }
+
+    #tweet-quote{
+        font-size: 35px;
+    }
+
+    #new-quote{
+        font-size: 35px;
+    }
+
+    #controls{
+        margin-top: 15px;
+    }
+}
+
+@include desktop{
+    #quote-box{
+        width: 50%; 
+    }
+
+    #text{
+        font-size: 40px;
+    }
+
+    #author{
+        margin-top: 25px;
+        text-align: right;
+        font-size: 30px;
+    }
+
+    #tweet-quote{
+        font-size: 45px;
+    }
+
+    #new-quote{
+        font-size: 45px;
+    }
+
+    #controls{
+        margin-top: 15px;
+    }
+}
